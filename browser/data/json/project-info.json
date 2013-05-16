@@ -1,16 +1,15 @@
 {
-"date":"Jan 2013",
-"project_name" :"Allura", 
-"project_url" :"http://incubator.apache.org/allura/",
-"scm_url":"https://github.com/apache/incubator-allura",
-"scm_name":"git://git.apache.org/incubator-allura.git",
+"date" :"",
+"project_name" :"OpenStack",
+"project_url" :"http://openstack.org",
+"title" :"OpenStack Development Dashboard",
+"scm_url":"https://github.com/openstack/",
+"scm_name":"OpenStack Github",
 "scm_type":"git",
-"its_url":"http://sourceforge.net/p/allura/tickets/",
-"its_name":"Allura Tickets",
-"its_type":"Allura issue tracking",
-"mls_url":"http://incubator.apache.org/allura/mailing-lists.html",
-"mls_name":"Apache Incubator Allura Mailing lists",
-"mls_type":"mailman",
-"producer":"",
-"blog_url":""
+"its_url":"https://bugs.launchpad.net/openstack",
+"its_name":"Launchpad Bugs",
+"its_type":"launchpad",
+"mls_url":"http://lists.openstack.org",
+"mls_name":"OpenStack Mailing lists",
+"mls_type":"mailman"
 }
