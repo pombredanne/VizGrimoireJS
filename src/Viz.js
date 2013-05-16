@@ -127,10 +127,7 @@ var Viz = {};
         for ( var i = 0; i < history[metric_id].length; i++) {
             var metric_value = history[metric_id][i];
             var doer_value = history[doer][i];
-            var doer_id = history.id[i];
-            table += "<tr><td>";
-            table += "<a href='people.html?id="+doer_id+"&name="+doer_value+"'>";
-            table += hideEmail(doer_value) + "</a></td><td>";
+            table += "<tr><td>"+hideEmail(doer_value)+"</td><td>";
             table += metric_value + "</td></tr>";
         }
         table += "</tbody></table>";
