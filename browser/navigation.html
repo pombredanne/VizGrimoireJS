@@ -1,18 +1,19 @@
-<div id="navigation" class="info-pill" style="width:130px">
-	<h1>Navigation</h1>
-	<a href="index.html">Summary</a><br>
-&nbsp;&nbsp;<a href="scm.html">Source Code</a><br>
-&nbsp;&nbsp;<a href="its.html">Tickets</a><br>
-&nbsp;&nbsp;<a href="mls.html">Mailing Lists</a>(<a href="mls-selector.html">selector</a>)<br>
-&nbsp;&nbsp;<a href="top.html">Top</a><br>
-&nbsp;&nbsp;<a href="bubbles.html">Bubbles</a><br>
-&nbsp;&nbsp;<a href="radar.html">Radar</a><br>
-&nbsp;&nbsp;<a href="dgrid.html">Gridster Dashboard</a><br>
-&nbsp;&nbsp;<a href="treemap.html">D3 TreeMap</a><br>
-&nbsp;&nbsp;<em>Reports</em><br>
-&nbsp;&nbsp;<a href="index-companies.html">Companies</a>|<a href="companies.html">List</a><br>
-&nbsp;&nbsp;Repos:<a href="scm-repos.html">SCM</a>|<a href="its-repos.html">ITS</a>|<a href="mls-repos.html">MLS</a><br>
-&nbsp;&nbsp;Countries:<a href="scm-countries.html">SCM</a>|<a href="its-countries.html">ITS</a>|<a href="mls-countries.html">MLS</a><br>
-&nbsp;&nbsp;<a href="demographics.html">Demographics</a><br>
-<!-- &nbsp;&nbsp;<a href="../test/jasmine/index.html">Jasmine Validation</a><br> -->
-</div>
+<ul class="nice-menu nice-menu-down">
+ <li class="menuparent"><a href="index.html" class="button" onmouseover="javascript:showElement('v-menu1')">Summary</a>
+   <ul id="v-menu1" class="v-menu" style="display:none;">
+     <li><a href="scm.html">by Git</a></li>
+     <li><a href="its.html">by Launchpad</a></li>
+     <li><a href="mls.html">by Mailing list</a></li>
+   </ul>
+ </li>
+ <li><a href="repositories.html" onmouseover="javascript:hideAll()">List of Projects</a></li>
+ <li><a href="dashboard/" onmouseover="javascript:hideAll()">Compare Projects!</a></li>
+ <li class="menuparent"><a href="#" class="button" onmouseover="javascript:showElement('v-menu2')">Details per Data Source</a>
+   <ul id="v-menu2" class="v-menu" style="display:none;">
+     <li><a href="scm-repos.html">by Git Repository</a></li>
+     <li><a href="its-repos.html">by Launchpad Product</a></li>
+     <li><a href="mls-repos.html">by Mailing List</a></li>
+   </ul>
+ </li>
+ <li><a href="top.html" onmouseover="javascript:hideAll()">Top Members</a></li>
+</ul>

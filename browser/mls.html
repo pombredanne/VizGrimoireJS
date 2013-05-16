@@ -10,22 +10,27 @@
         <!-- <link rel="stylesheet" type="text/css" href="VizGrimoireJS/src/envision.min.css" />
         <link rel="stylesheet" type="text/css" href="VizGrimoireJS/src/report-envision.css" />
         <link rel="stylesheet" type="text/css" id="theme" href="VizGrimoireJS/src/report.css" /> -->
-        <link rel="stylesheet" type="text/css" id="theme" href="VizGrimoireJS/vizgrimoire.css" />
-        <link rel="stylesheet" type="text/css" href="custom.css" />        
+        <!--<link rel="stylesheet" type="text/css" id="theme" href="VizGrimoireJS/vizgrimoire.css" />-->
+	<link rel="stylesheet" type="text/css" href="theme.css" />
+	<script type="text/javascript" src="menu.js"></script>
+	<link rel="stylesheet" type="text/css" href="custom.css" />        
         <script type="text/javascript" src="VizGrimoireJS/src/jquery-1.7.1.min.js"></script>
-        <title>Bitergia M0 Report: Mailing Lists</title>
+        <title>Mailing Lists</title>
         <style type="text/css">
         </style>
     </head>
 
     </head>
     <body>
+      <div id="header"></div>
+      <div id="navigation" class="clearfix"></div>
         <div id="wrapper">        
+	  <div id="centerdiv">
+          <div style="float:left;width:150px">
 
-             <div id="header"></div>
-            
-			<div style="float:left;width:150px">
-				<div id="navigation"></div>
+<!--				<div class="info-pill" style="width:120px">
+					<div id ="mls-selector" style="margin-top:20px"></div>
+				</div>-->
 			</div>
             <div style="float:left">
                 <div>
@@ -34,20 +39,20 @@
                     </div>
                     <div id="mls-envision" style="float:left;margin:10px"></div>
                     <div id="mls-flotr2" style="float:left;width:300px;margin:10px"></div>
-                    <div id="mls-top" style="float:left"></div>
                     <div style="float:left">
-                        <h1>Time to Attention MLS</h1>
-                        <div>
-                        X% of mails posts during the corresponding month were attended in less than n days
-                        </div>
-                        <div class="mls-time-to-attention" style="width:300px;height:100px" data-quantil='0.99'></div>
-                        <div class="mls-time-to-attention" style="width:300px;height:100px" data-quantil='0.95'></div>
-                        <div class="mls-time-to-attention" style="width:300px;height:100px" data-quantil='0.50'></div>
-                    </div>                    
+                        <div id="mls-top" data-show_all="true"></div>
+                    </div>
+                </div>
+                <div style="clear: both;"></div>
+                <div style="margin:40px">
+<!--                    <div id="mls-envision-lists" style="float:left"></div>                
+                    <div id="mls-flotr2-lists" style="float:left" class="mls-dyn-list"></div>-->
                 </div>
             </div>
-            <div id="footer"></div>
+
         </div>
+	  </div>
+            <div id="footer"></div>
         <script type="text/javascript" src="VizGrimoireJS/vizgrimoire.min.js"></script>
     </body>
 </html>

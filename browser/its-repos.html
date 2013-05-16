@@ -7,17 +7,21 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, maximum-scale=1.0">
         <meta name="description" content="Bitergia company website" />
-	    <link rel="stylesheet" type="text/css" id="theme" href="VizGrimoireJS/vizgrimoire.css" />
-        <script type="text/javascript" src="VizGrimoireJS/src/jquery-1.7.1.min.js"></script>
+	<!--<link rel="stylesheet" type="text/css" id="theme" href="VizGrimoireJS/vizgrimoire.css" />-->
+	<link rel="stylesheet" type="text/css" href="theme.css" />
+	<script type="text/javascript" src="menu.js"></script>
+	<script type="text/javascript" src="VizGrimoireJS/src/jquery-1.7.1.min.js"></script>
         <title>WebKit Report by Bitergia: Information about all repositories</title>
         <style type="text/css">
         </style>
     </head>
 
     <body>
-        <div id="wrapper">
-            <div id="header"></div>
-            <div id="navigation" style="float:left"></div>
+
+      <div id="header"></div>
+      <div id="navigation" class="clearfix"></div>
+      <div id="wrapper">
+	<div id="centerdiv">		
             <div style="float:left">
     			<div style="float:left">
     				<div id="info-pill">
@@ -30,7 +34,7 @@
                         <div id="info-pill" style="width:360px;height:170px;float:left;margin-bottom:15px;margin-righ:15px">
                              <div style="float:left;width:350px;height:150px" 
                                   class="its-flotr2-metrics" data-metrics="repositories" data-legend="false"></div>
-                             <i><b>Active Tickets repositories per month</b></i><a href="notes.html#note:charts:repositories:repositories"><img src="qm_15.png"></a>
+                             <i><b>Active Tickets repositories per month</b></i>
                         </div>       
 
                          <div class="info-pill" style="width:360px;height:170px;float:left;margin-bottom:15px;">
@@ -44,14 +48,14 @@
                             <div class="its-flotr2-repos-static" 
                                  data-metric="closed" data-limit="10" data-order-by="closed"
                                  style="width:350px;height:250px;margin-right:10px;float:left;margin-bottom:10px"></div>
-                            <i><b>Closed per repository (aggregated)</b><a href="notes.html#note:charts:repositories:closed"><img src="qm_15.png"></a></i>
+                            <i><b>Closed per repository (aggregated)</b></i>
                         </div>
 
                         <div id="info-pill" style="width:370px;height:270px;float:left;margin-bottom:25px;margin-righ:25px">
                             <div class="its-flotr2-repos-static"
                                  data-metric="closers" data-limit="10" data-order-by="closed"
                                  style="width:350px;height:250px;margin-right:10px;float:left;margin-bottom:10px"></div>
-                            <i><b>Closers per repository (aggregated)</b><a href="notes.html#note:charts:repositories:closers"><img src="qm_15.png"></a></i>
+                            <i><b>Closers per repository (aggregated)</b></i>
                         </div>
                     </div>
                 </div>
@@ -67,9 +71,11 @@
                         style="width:700px; margin-right:10px;"></div>
                 </div>
             </div>
-		<div id="footer"></div>
+	
 
 		</div>
+	</div>
+      	<div id="footer"></div>
         <!-- <script type="text/javascript" src="VizGrimoireJS/vizgrimoire.min.js"></script> -->
         <script type="text/javascript" src="VizGrimoireJS/src/envision.js"></script>
         <script type="text/javascript" src="VizGrimoireJS/src/DataSource.js"></script>
